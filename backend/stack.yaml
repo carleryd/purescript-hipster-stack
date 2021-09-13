@@ -65,3 +65,9 @@ packages:
 #
 # Allow a newer minor version of GHC than the snapshot specifies
 # compiler-check: newer-minor
+
+# Docker setup for EBS deploying purposes
+docker:
+  # False requires explicit command i.e. "stack build --docker"
+  enable: true
+  repo: commercialhaskell/stackage:lts18

@@ -48,7 +48,7 @@ render { label, amount, toggled } =
     element = (
       HH.button
         [ HE.onClick \_ -> Click ]
-        [ HH.text $ label <> toggleText ]
+        [ HH.text $ label <> " " <> toggleText ]
       )
 
 handleQuery :: forall a m. MonadAff m => Query a -> H.HalogenM State Action () Output m (Maybe a)

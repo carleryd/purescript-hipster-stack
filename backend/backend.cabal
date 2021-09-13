@@ -1,10 +1,8 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
---
--- hash: 9eb1e96c825373229f7d7feee95e14dad5c4644e526698e5411b052623a8d535
 
 name:           backend
 version:        0.1.0.0
@@ -47,6 +45,7 @@ executable backend-exe
   build-depends:
       backend
     , base >=4.7 && <5
+    , scotty
   default-language: Haskell2010
 
 test-suite backend-test
@@ -60,4 +59,5 @@ test-suite backend-test
   build-depends:
       backend
     , base >=4.7 && <5
+    , scotty
   default-language: Haskell2010
